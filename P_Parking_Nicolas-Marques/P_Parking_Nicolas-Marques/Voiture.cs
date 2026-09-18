@@ -2,34 +2,61 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
 {
     internal class Voiture
     {
-        public string LicensingPlate { get; private set; }
+        private string _licensingPlate;
+        public string LicensingPlate {
+            get
+            {
+                return _licensingPlate;
+            }
+            private set
+            {
+                if(Regex.IsMatch(value, @"^[A-Z]{2}-\d{1,6}$"))
+                {
+                    Debug.WriteLine("Valid");
+                    _licensingPlate = value;
+                    IsValid = true;
+                }
+                else
+                {
+                    Debug.WriteLine("Invalid");
+                    IsValid = false;
+                }
+            }
+        }
+        public bool IsValid { get; private set; }
         private Ticket ticketCar;
 
-        public Voiture(string licensingPlate, Ticket ticketCar)
+        public Voiture(string licensingPlate)
         {
             LicensingPlate = licensingPlate;
-            this.ticketCar = ticketCar;
+            if (IsValid)
+            {
+                Parking.AddVehicle(this);
+            }
+            
         }
 
-        public void testThingy()
+        /// <summary>
+        /// Pour recevoir un ticket donner par la méthode "AddVehicle" dans "Parking.cs"
+        /// </summary>
+        /// <param name="ticket">Pour pouvoir réceptionner le ticket</param>
+        public void ReceiveTicket(Ticket ticket)
         {
-            Console.WriteLine(LicensingPlate);
-            Console.WriteLine(ticketCar.SpotNumber);
-            if (ticketCar.SpotNumber == 1)
-            {
-                Console.WriteLine("C'est le 1");
-            }
-            else
-            {
-                Console.WriteLine("Skibidi trop nul");
-            }
+            ticketCar = ticket;
+        }
+
+        public override string ToString()
+        {
+            return $"Plaque d'immatriculation: {LicensingPlate}\n{ticketCar}";
         }
     }
 }

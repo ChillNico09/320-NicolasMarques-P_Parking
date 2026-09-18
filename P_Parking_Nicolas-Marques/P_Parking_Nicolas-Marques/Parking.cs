@@ -9,6 +9,8 @@ namespace P_Parking_Nicolas_Marques
     static internal class Parking
     {
         private static int[] parking = new int[20];
+        private static int minParkingIndex = 1;
+        private static int maxParkingIndex = parking.Length;
 
         private static int totalSpot = parking.Length;
         private static int freeSpot;
@@ -19,6 +21,8 @@ namespace P_Parking_Nicolas_Marques
         /// </summary>
         public static void Display()
         {
+            freeSpot = 0;
+            usedSpot = 0;
             for (int i = 0; i < parking.Length; i++)
             {
                 int currentSpotNumber = i + 1;
@@ -32,6 +36,26 @@ namespace P_Parking_Nicolas_Marques
                 }
             }
             StatParking();
+        }
+
+        /// <summary>
+        /// Va implémenter le véhicule dans le parking
+        /// </summary>
+        /// <param name="vehicle">Le véhicule qu'on doit entrer dans le parking</param>
+        public static void AddVehicle(Voiture vehicle)
+        {
+            int randomSpot = RandomNumber.GenerateNumber(minParkingIndex, maxParkingIndex);
+            if(freeSpot > 0)
+            {
+                while(parking[randomSpot] != 0)
+                {
+                    randomSpot = RandomNumber.GenerateNumber(minParkingIndex, maxParkingIndex);
+                }
+                parking[randomSpot] = 1;
+                randomSpot += 1;
+                Ticket ticket = new Ticket(randomSpot, 1);
+                vehicle.ReceiveTicket(ticket);
+            }
         }
 
         /// <summary>
