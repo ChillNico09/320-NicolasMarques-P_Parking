@@ -12,18 +12,28 @@ namespace P_Parking_Nicolas_Marques
     {
         static void Main(string[] args)
         {
-            Ticket ticket = new Ticket(1, 1);
+            bool continueProgram = true; //Cette variable devra être mis en "false" quand nécessaire
             Parking.Display();
-            Thread.Sleep(1000);
-            ticket.Calc();
+            Console.Clear();
+
+            while (continueProgram)
+            {
+                Menu.DisplayMenu();
+            }   
+            //Mettre la List<Voiture> dans la classe "Parking"
             List<Voiture> list = new List<Voiture>();
-            
+
+
+
+            /*
             list.Add(new Voiture("VD-17344"));
             list.Add(new Voiture("GE-1941"));
             list.Add(new Voiture("FR-679013"));
             list.Add(new Voiture("VS-6o9")); //Invalide pour le débug
             list.Add(new Voiture("V2-69")); //Invalide pour le débug
-            Console.Clear();
+            */
+            
+            /*
             Parking.Display();
             for(int i = 0; i < list.Count; i++)
             {
@@ -36,7 +46,7 @@ namespace P_Parking_Nicolas_Marques
                     list[i] = null;
                 }
             }
-            Console.ReadLine();
+            */
         }
     }
 }

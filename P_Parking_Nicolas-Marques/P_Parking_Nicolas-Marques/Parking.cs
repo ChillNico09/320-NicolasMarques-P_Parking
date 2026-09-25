@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
@@ -54,6 +55,7 @@ namespace P_Parking_Nicolas_Marques
                 parking[randomSpot] = 1;
                 randomSpot += 1;
                 Ticket ticket = new Ticket(randomSpot, 1);
+                //Thread.Sleep(100);
                 vehicle.ReceiveTicket(ticket);
             }
         }

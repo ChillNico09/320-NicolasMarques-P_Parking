@@ -45,7 +45,7 @@ namespace P_Parking_Nicolas_Marques
 
         public override string ToString()
         {
-            return $"Parker au numéro: {SpotNumber}";
+            return $"Parker au numéro: {SpotNumber}\n{EnterTime}";
         }
     }
 }
