@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Menu.cs" />
+    <Compile Include="PlayGame.cs" />
     <Compile Include="RandomNumber.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="Voiture.cs" />

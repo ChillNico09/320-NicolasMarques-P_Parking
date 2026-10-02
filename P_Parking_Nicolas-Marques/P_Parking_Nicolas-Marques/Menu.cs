@@ -13,7 +13,7 @@ namespace P_Parking_Nicolas_Marques
         private static int optionNumber = menuText.Length;
 
         private static string enterText = "Entrer votre choix: ";
-
+        public static bool ContinueProgram { get; private set; } = true;
 
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace P_Parking_Nicolas_Marques
         /// <param name="userNumber">Le nombre entré par l'utilisateur</param>
         private static void CheckInRange(int userNumber)
         {
-            if(userNumber > 0 && userNumber < optionNumber)
+            if(userNumber > 0 && userNumber <= optionNumber)
             {
                 UseOption(userNumber);
             }
@@ -93,11 +93,12 @@ namespace P_Parking_Nicolas_Marques
             {
                 //1: Entrer un véhicule
                 case 1:
-                    Console.WriteLine("");
+                    EnterVehicle();
+                    
                     break;
                 //2: Sortir un véhicule
                 case 2:
-                    Console.WriteLine("");
+                    Console.Clear();
                     break;
                 //3: Afficher le parking
                 case 3:
@@ -117,7 +118,7 @@ namespace P_Parking_Nicolas_Marques
                     break;
                 //7: Quitter
                 case 7:
-                    Console.WriteLine("");
+                    ContinueProgram = false;
                     break;
             }
         }
@@ -127,11 +128,28 @@ namespace P_Parking_Nicolas_Marques
         /// </summary>
         private static void CallParking()
         {
-            Console.Clear();
-            Console.SetCursorPosition(0, 0);
+            ClearConsoleAndPosition();
             Parking.Display();
             Console.WriteLine("\n\n\n");
             DisplayMenu();
+        }
+
+        private static void EnterVehicle()
+        {
+            ClearConsoleAndPosition();
+            Console.Write("Entrer une plaque sous ce format (2LettresMajuscules-1à6Chiffres) : ");
+            string userLicensePlate = Console.ReadLine();
+            if (userLicensePlate != null)
+            {
+                new Voiture(userLicensePlate);
+            }
+            DisplayMenu();
+        }
+
+        private static void ClearConsoleAndPosition()
+        {
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
         }
     }
 }

@@ -17,6 +17,8 @@ namespace P_Parking_Nicolas_Marques
         private static int freeSpot;
         private static int usedSpot;
 
+        public static List<Voiture> CarList {  get; private set; } = new List<Voiture>();
+
         /// <summary>
         /// Affiche le parking
         /// </summary>
@@ -57,6 +59,7 @@ namespace P_Parking_Nicolas_Marques
                 Ticket ticket = new Ticket(randomSpot, 1);
                 //Thread.Sleep(100);
                 vehicle.ReceiveTicket(ticket);
+                CarList.Add(vehicle);
             }
         }
 

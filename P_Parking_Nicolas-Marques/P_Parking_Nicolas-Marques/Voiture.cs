@@ -12,7 +12,8 @@ namespace P_Parking_Nicolas_Marques
     internal class Voiture
     {
         private string _licensingPlate;
-        public string LicensingPlate {
+        public string LicensingPlate
+        {
             get
             {
                 return _licensingPlate;
@@ -24,11 +25,13 @@ namespace P_Parking_Nicolas_Marques
                     Debug.WriteLine("Valid");
                     _licensingPlate = value;
                     IsValid = true;
+                    Console.WriteLine($"Votre voiture ({LicensingPlate}) à été ajouté au parking!");
                 }
                 else
                 {
                     Debug.WriteLine("Invalid");
                     IsValid = false;
+                    Console.WriteLine($"Le format est incorrecte. La voiture n'a pas été ajouté.");
                 }
             }
         }
