@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -94,7 +96,6 @@ namespace P_Parking_Nicolas_Marques
                 //1: Entrer un véhicule
                 case 1:
                     EnterVehicle();
-                    
                     break;
                 //2: Sortir un véhicule
                 case 2:
@@ -106,7 +107,7 @@ namespace P_Parking_Nicolas_Marques
                     break;
                 //4: Rechercher un véhicule
                 case 4:
-                    Console.WriteLine("");
+                    ShearchVehicle();
                     break;
                 //5: Statistiques
                 case 5:
@@ -130,26 +131,67 @@ namespace P_Parking_Nicolas_Marques
         {
             ClearConsoleAndPosition();
             Parking.Display();
-            Console.WriteLine("\n\n\n");
+            ReturnMultipleLines();
             DisplayMenu();
         }
 
+        /// <summary>
+        /// Permet à l'utilisateur d'entrer un véhicule
+        /// </summary>
         private static void EnterVehicle()
         {
             ClearConsoleAndPosition();
-            Console.Write("Entrer une plaque sous ce format (2LettresMajuscules-1à6Chiffres) : ");
+            Console.Write("Ajouter un véhicule\nEntrer une plaque sous ce format (2LettresMajuscules-1à6Chiffres)\nEntrer une valeur : ");
             string userLicensePlate = Console.ReadLine();
             if (userLicensePlate != null)
             {
                 new Voiture(userLicensePlate);
             }
+            ReturnMultipleLines();
             DisplayMenu();
         }
 
+
+        private static void ShearchVehicle()
+        {
+            ClearConsoleAndPosition();
+            Console.Write("Rechercher un véhicule\nEntrer une plaque sous ce format (2LettresMajuscules-1à6Chiffres)\nou son numéro de place\nEntrer une valeur : ");
+            int spotNumber = 0;
+            string userLicensePlate = Console.ReadLine();
+            if (userLicensePlate != null)
+            {
+                if(int.TryParse(userLicensePlate, out spotNumber))
+                {
+                    Parking.FindVehicule(userLicensePlate, spotNumber, false);
+                    ReturnMultipleLines();
+                }
+                else
+                {
+                    if (Regex.IsMatch(userLicensePlate, @"^[A-Z]{2}-\d{1,6}$"))
+                    {
+                        Parking.FindVehicule(userLicensePlate, spotNumber, true);
+                        ReturnMultipleLines();
+                    }
+                }
+            }
+            DisplayMenu();
+        }
+
+        /// <summary>
+        /// éfface la console puis remet le curseur au tout début
+        /// </summary>
         private static void ClearConsoleAndPosition()
         {
             Console.Clear();
             Console.SetCursorPosition(0, 0);
+        }
+
+        /// <summary>
+        /// Fait plusieur retour à la ligne
+        /// </summary>
+        private static void ReturnMultipleLines()
+        {
+            Console.Write("\n\n\n");
         }
     }
 }

@@ -36,7 +36,7 @@ namespace P_Parking_Nicolas_Marques
             }
         }
         public bool IsValid { get; private set; }
-        private Ticket ticketCar;
+        public Ticket ticketCar { get; private set; }
 
         public Voiture(string licensingPlate)
         {

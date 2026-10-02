@@ -130,6 +130,28 @@ namespace P_Parking_Nicolas_Marques
             return spotSymbole;
         }
 
+        public static void FindVehicule(string licensePlate, int spotNumber, bool checkLicensePlate)
+        {
+            foreach(Voiture car in CarList)
+            {
+                if (checkLicensePlate)
+                {
+                    if (car.LicensingPlate == licensePlate)
+                    {
+                        Console.WriteLine(car);
+                    }
+                }
+                else
+                {
+                    if (car.ticketCar.SpotNumber == spotNumber)
+                    {
+                        Console.WriteLine(car);
+                    }
+                }
+                return;
+            }
+        }
+
         /// <summary>
         /// Affiche diverse statistiques du parking
         /// </summary>
