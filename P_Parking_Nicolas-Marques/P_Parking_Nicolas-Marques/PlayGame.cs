@@ -20,16 +20,8 @@ namespace P_Parking_Nicolas_Marques
             while (continueProgram)
             {
                 Menu.DisplayMenu();
-                UpdateValues();
+                continueProgram = Menu.ContinueProgram;
             }
-        }
-
-        /// <summary>
-        /// Mettre à jour les valeurs qui pointe sur d'autre classes
-        /// </summary>
-        private static void UpdateValues()
-        {
-            continueProgram = Menu.ContinueProgram;
         }
 
         /// <summary>

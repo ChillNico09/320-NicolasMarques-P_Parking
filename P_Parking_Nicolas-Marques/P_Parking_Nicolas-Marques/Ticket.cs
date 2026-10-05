@@ -9,8 +9,12 @@ namespace P_Parking_Nicolas_Marques
 {
     internal class Ticket
     {
-        private DateTime EnterTime;
+        public DateTime EnterTime { get; private set; }
+        public DateTime ExitTime { get; private set; }
         private int _spotNumber;
+        private bool isParked;
+
+        public int totalPrice {  get; private set; }
         public int SpotNumber
         {
             get
@@ -30,22 +34,44 @@ namespace P_Parking_Nicolas_Marques
         public Ticket(int spotNumber, int hourlyRate)
         {
             EnterTime = DateTime.Now;
-            //Console.WriteLine(EnterTime);
+            isParked = true;
 
             SpotNumber = spotNumber;
             HourlyRate = hourlyRate;
         }
 
+        /// <summary>
+        /// Calculer la durée total du stationnement puis le montant total payé
+        /// </summary>
         public void Calc()
         {
+            isParked = false;
+            ExitTime = DateTime.Now;
+            TimeSpan duration = GetCurrentParkedTime();
+            totalPrice = (int)duration.TotalSeconds;
+        }
+
+        /// <summary>
+        /// Va calculé la durée du stationnement actuel
+        /// </summary>
+        /// <returns>La durée actuel de stationnement</returns>
+        public TimeSpan GetCurrentParkedTime()
+        {
             TimeSpan duration = DateTime.Now - EnterTime;
-            //Console.WriteLine("\n"+duration.Seconds);
+            return duration;
         }
 
 
         public override string ToString()
         {
-            return $"Parker au numéro: {SpotNumber}\n{EnterTime}";
+            if (isParked)
+            {
+                return $"Parker au numéro: {SpotNumber}\nHeure d'entrer: {EnterTime.Hour}:{EnterTime.Minute}:{EnterTime.Second}";
+            }
+            else
+            {
+                return $"Parker au numéro: {SpotNumber}\nHeure d'entrer: {EnterTime.Hour}:{EnterTime.Minute}:{EnterTime.Second}\nHeure de sortie: {ExitTime.Hour}:{ExitTime.Minute}:{ExitTime.Second}\nMontant payé: {totalPrice}";
+            }
         }
     }
 }
