@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P_Parking_Nicolas-Marques", "P_Parking_Nicolas-Marques\P_Parking_Nicolas-Marques.csproj", "{0AC4872D-7992-4CE8-9219-7FFB30E97184}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P_Parking_Nicolas_Marques.Tests", "P_Parking_Nicolas-Marques.Tests\P_Parking_Nicolas_Marques.Tests.csproj", "{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0AC4872D-7992-4CE8-9219-7FFB30E97184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC4872D-7992-4CE8-9219-7FFB30E97184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AC4872D-7992-4CE8-9219-7FFB30E97184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
 {
-    internal class Voiture
+    public class Voiture
     {
         private string _licensingPlate;
         public string LicensingPlate

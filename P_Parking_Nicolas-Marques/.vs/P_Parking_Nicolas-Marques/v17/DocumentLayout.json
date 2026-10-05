@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}|P_Parking_Nicolas-Marques.Tests\\P_Parking_Nicolas_Marques.Tests.csproj|d:\\etml-2eme\\i320-poo\\p_parking\\p_parking_nicolas-marques\\p_parking_nicolas-marques\\p_parking_nicolas-marques.tests\\parkingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F9896B9-0CDC-4243-86BD-E7C8CDA63242}|P_Parking_Nicolas-Marques.Tests\\P_Parking_Nicolas_Marques.Tests.csproj|solutionrelative:p_parking_nicolas-marques.tests\\parkingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|solutionrelative:p_parking_nicolas-marques\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|d:\\etml-2eme\\i320-poo\\p_parking\\p_parking_nicolas-marques\\p_parking_nicolas-marques\\p_parking_nicolas-marques\\playgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|solutionrelative:p_parking_nicolas-marques\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\playgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|solutionrelative:p_parking_nicolas-marques\\playgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\voiture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|solutionrelative:p_parking_nicolas-marques\\voiture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|solutionrelative:p_parking_nicolas-marques\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AC4872D-7992-4CE8-9219-7FFB30E97184}|P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.csproj|D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\p_parking_nicolas-marques\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,81 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Program.cs",
               "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\Program.cs",
               "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Program.cs",
               "RelativeToolTip": "P_Parking_Nicolas-Marques\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T07:31:53.707Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayGame.cs",
-              "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\PlayGame.cs",
-              "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\PlayGame.cs",
-              "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\PlayGame.cs",
-              "RelativeToolTip": "P_Parking_Nicolas-Marques\\PlayGame.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T06:14:46.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Menu.cs",
               "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\Menu.cs",
               "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Menu.cs",
               "RelativeToolTip": "P_Parking_Nicolas-Marques\\Menu.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAcwB0BAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T07:56:35.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "PlayGame.cs",
+              "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\PlayGame.cs",
+              "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\PlayGame.cs",
+              "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\PlayGame.cs",
+              "RelativeToolTip": "P_Parking_Nicolas-Marques\\PlayGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:14:46.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Ticket.cs",
               "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\Ticket.cs",
               "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Ticket.cs",
               "RelativeToolTip": "P_Parking_Nicolas-Marques\\Ticket.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T09:11:13.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Voiture.cs",
               "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Voiture.cs",
               "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\Voiture.cs",
               "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Voiture.cs",
               "RelativeToolTip": "P_Parking_Nicolas-Marques\\Voiture.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-11T08:33:03.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Parking.cs",
               "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Parking.cs",
               "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques\\Parking.cs",
               "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\Parking.cs",
               "RelativeToolTip": "P_Parking_Nicolas-Marques\\Parking.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwHAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T06:31:50.941Z",
+              "WhenOpened": "2026-09-11T06:31:50.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ParkingTests.cs",
+              "DocumentMoniker": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.Tests\\ParkingTests.cs",
+              "RelativeDocumentMoniker": "P_Parking_Nicolas-Marques.Tests\\ParkingTests.cs",
+              "ToolTip": "D:\\ETML-2eme\\I320-POO\\P_Parking\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques\\P_Parking_Nicolas-Marques.Tests\\ParkingTests.cs",
+              "RelativeToolTip": "P_Parking_Nicolas-Marques.Tests\\ParkingTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T07:05:26.949Z",
               "EditorCaption": ""
             }
           ]

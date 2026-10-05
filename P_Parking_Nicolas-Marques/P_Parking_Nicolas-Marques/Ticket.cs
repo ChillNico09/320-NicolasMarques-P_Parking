@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
 {
-    internal class Ticket
+    public class Ticket
     {
         public DateTime EnterTime { get; private set; }
         public DateTime ExitTime { get; private set; }

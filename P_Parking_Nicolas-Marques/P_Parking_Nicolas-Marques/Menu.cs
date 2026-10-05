@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
 {
-    static internal class Menu
+    public class Menu
     {
         private static string[] menuText = {"Entrer un véhicule", "Sortir un véhicule", "Afficher le parking", "Rechercher un véhicule", "Statistiques", "Historique", "Quitter"};
-        private static int optionNumber = menuText.Length;
+        public static int optionNumber { get; private set; } = menuText.Length;
 
         private static string enterText = "Entrer votre choix: ";
         public static bool ContinueProgram { get; private set; } = true;

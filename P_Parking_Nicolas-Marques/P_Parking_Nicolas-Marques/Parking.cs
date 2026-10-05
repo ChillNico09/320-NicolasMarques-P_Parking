@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P_Parking_Nicolas_Marques
 {
-    static internal class Parking
+    public class Parking
     {
         private static int[] parking = new int[20];
         private static int minParkingIndex = 1;
@@ -110,7 +110,7 @@ namespace P_Parking_Nicolas_Marques
         /// X = occupé
         /// E = erreur/inconnue
         /// </returns>
-        private static char CheckParkingSpot(int spotStatus)
+        public static char CheckParkingSpot(int spotStatus)
         {
             char spotSymbole;
             switch (spotStatus){
@@ -299,7 +299,7 @@ namespace P_Parking_Nicolas_Marques
         {
             foreach (Voiture car in carList)
             {
-                Console.WriteLine($"\nHeure d'entrée: {car.ticketCar.EnterTime} - Plaque d'immatriculations: {car.LicensingPlate}\nHeure d'entrée: {car.ticketCar.ExitTime} - Plaque d'immatriculations: {car.LicensingPlate} - Montant payé: {car.ticketCar.totalPrice}");
+                Console.WriteLine($"\nHeure d'entrée: {car.ticketCar.EnterTime} - Plaque d'immatriculations: {car.LicensingPlate}\nHeure de sortie: {car.ticketCar.ExitTime} - Plaque d'immatriculations: {car.LicensingPlate} - Montant payé: {car.ticketCar.totalPrice}");
             }
         }
     }
