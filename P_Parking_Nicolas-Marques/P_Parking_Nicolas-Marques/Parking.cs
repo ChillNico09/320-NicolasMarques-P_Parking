@@ -18,7 +18,7 @@ namespace P_Parking_Nicolas_Marques
         private static int usedSpot;
 
         private static List<Voiture> parkedCarList = new List<Voiture>();
-        private static List<Voiture> carList = new List<Voiture>();
+        public static List<Voiture> carList { get; private set; } = new List<Voiture>();
 
         /// <summary>
         /// Affiche le parking
@@ -245,7 +245,7 @@ namespace P_Parking_Nicolas_Marques
                 Console.WriteLine($"Place libre: {freeSpot}");
                 Console.WriteLine($"Place occupé: {usedSpot}");
                 Console.WriteLine($"Pourcentage d'occupation: {percentageSpotUsed}");
-                totalPricePaid = GetTotalPaidPrice();
+                totalPricePaid = GetTotalPaidPrice(carList);
                 Console.WriteLine($"Montant total payé: {totalPricePaid}");
                 WriteAllParkedTime();
             }
@@ -270,7 +270,7 @@ namespace P_Parking_Nicolas_Marques
         /// Récuperer le montant payé par tout les véhicule qui on quitté le parking
         /// </summary>
         /// <returns>Montant total payé de tout les véhicules qui on quitté le parking</returns>
-        private static int GetTotalPaidPrice()
+        public static int GetTotalPaidPrice(List<Voiture> carList)
         {
             int totalPricePaid = 0;
             foreach (Voiture car in carList)
