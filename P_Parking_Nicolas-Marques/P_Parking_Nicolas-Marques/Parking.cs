@@ -39,7 +39,7 @@ namespace P_Parking_Nicolas_Marques
                     ParkingSpot(false, currentSpotNumber, parking[i]);
                 }
             }
-            StatParking(false, false);
+            StatParking(false, false, false);
         }
 
         /// <summary>
@@ -216,15 +216,26 @@ namespace P_Parking_Nicolas_Marques
         /// Affiche diverse statistiques du parking
         /// </summary>
         /// <param name="isDailyStat">Permet de savoir si on veut les statistiques du jour ou simplement les statistiques du parking</param>
-        public static void StatParking(bool isDailyStat, bool isTransactionHistory)
+        public static bool StatParking(bool isDailyStat, bool isTransactionHistory, bool isTest)
         {
             if (isDailyStat)
             {
-                WriteStats(isDailyStat, isTransactionHistory);
+                if (!isTest)
+                {
+                    WriteStats(isDailyStat, isTransactionHistory);
+                    return false;
+                }
+                return true;
             }
             else
             {
+                if (!isTest)
+                {
+                    WriteStats(isDailyStat, isTransactionHistory);
+                    return false;
+                }
                 WriteStats(isDailyStat, isTransactionHistory);
+                return true;
             }
         }
 

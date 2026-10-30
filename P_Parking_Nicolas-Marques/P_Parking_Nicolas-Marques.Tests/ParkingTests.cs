@@ -37,5 +37,20 @@ namespace P_Parking_Nicolas_Marques.Tests
             // Assert
             Assert.AreEqual(excepted, actual, "Des voitures ont quitté le parking!");
         }
+
+        [TestMethod]
+        public void StatParking_IsDaily_Result_Daily()
+        {
+            // Arrange
+            List<Voiture> carList = Parking.carList;
+            bool actual = false;
+            bool excepted = true;
+
+            // Act
+            actual = Parking.StatParking(true, false, true);
+
+            // Assert
+            Assert.AreEqual(excepted, actual, "Il faut afficher les stats du jour!");
+        }
     }
 }

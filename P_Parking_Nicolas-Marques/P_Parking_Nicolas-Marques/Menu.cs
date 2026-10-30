@@ -111,11 +111,11 @@ namespace P_Parking_Nicolas_Marques
                     break;
                 //5: Statistiques
                 case 5:
-                    Parking.StatParking(true, false);
+                    Parking.StatParking(true, false, false);
                     break;
                 //6: Historique
                 case 6:
-                    Parking.StatParking(false, true);
+                    Parking.StatParking(false, true, false);
                     break;
                 //7: Quitter
                 case 7:
